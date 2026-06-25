@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact - TravelBuddy</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+<link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Header -->
+  <header class="navbar">
+    <div class="logo"><i class="fa-solid fa-map-location-dot"></i> Travel<span>Buddy</span></div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li class="dropdown">
+          <a href="#">Services <i class="fa-solid fa-chevron-down"></i></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Itinerary Builder</a></li>
+            <li><a href="#">Trekking Guides</a></li>
+            <li><a href="#">Bike Tour Planning</a></li>
+            <li><a href="#">Group Travel</a></li>
+          </ul>
+        </li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Hero -->
+  <section class="page-hero">
+    <div class="page-hero-content" data-aos="fade-up">
+      <h1>Get In <span>Touch</span></h1>
+      <p>Have a destination in mind? Let's start planning your next adventure.</p>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section class="contact" id="contact">
+    <div class="contact-wrapper" style="margin-top: 0;">
+      <div class="contact-info" data-aos="fade-right">
+        <div class="info-item">
+          <i class="fa-solid fa-envelope"></i>
+          <div>
+            <h4>Email</h4>
+            <p>hello@travelbuddy.com</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-phone"></i>
+          <div>
+            <h4>Phone</h4>
+            <p>+91 98765 43210</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-location-dot"></i>
+          <div>
+            <h4>Address</h4>
+            <p>Kerala, India</p>
+          </div>
+        </div>
+        <div class="info-item">
+          <i class="fa-solid fa-clock"></i>
+          <div>
+            <h4>Working Hours</h4>
+            <p>Mon – Sat, 9 AM – 6 PM</p>
+          </div>
+        </div>
+      </div>
+
+      <form class="contact-form" name="contactForm" onsubmit="return validateForm()" data-aos="fade-left">
+        <!-- Inline error message box -->
+        <div id="form-error" class="form-error" style="display:none;">
+          <i class="fa-solid fa-triangle-exclamation"></i>
+          <span id="error-text"></span>
+        </div>
+        <!-- Success message box -->
+        <div id="form-success" class="form-success" style="display:none;">
+          <i class="fa-solid fa-circle-check"></i>
+          <span>Message sent! We'll get back to you soon.</span>
+        </div>
+
+        <input type="text" name="name" placeholder="Your Name" autocomplete="off">
+        <input type="email" name="email" placeholder="Your Email" autocomplete="off">
+        <input type="text" name="destination" placeholder="Dream Destination (optional)">
+        <textarea name="message" placeholder="Tell us about your dream trip" rows="4"></textarea>
+        <button type="submit" class="cta-btn">Send Message</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 TravelBuddy. All Rights Reserved.</p>
+    <div class="footer-links">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </footer>
+
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
